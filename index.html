@@ -1,19 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="timer"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="text"></div>
-        <textarea class="typing-space"></textarea>
+      <h1>Typing Speed Test</h1>
+      <div class="info">
+        <p>Time: <span class="timer">0</span>s</p>
+        <p>WPM: <span class="wpm">0</span></p>
+        <p>Errors: <span class="errors">0</span></p>
+      </div>
+      <div class="text-to-type"></div>
+      <textarea
+        class="typing-area"
+        placeholder="Start typing here..."
+      ></textarea>
+      <button class="restart-btn">Restart</button>
     </div>
-    
+
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
